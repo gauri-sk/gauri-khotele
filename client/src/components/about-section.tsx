@@ -40,7 +40,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-24 relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start lg:items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -63,7 +63,7 @@ export default function AboutSection() {
                 <CheckCircle className="mr-3 w-5 h-5" />
                 Core Expertise
               </h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                 {skills.map((skill, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="text-accent-cyan w-4 h-4" />

@@ -150,3 +150,110 @@
 .stagger-2 { animation-delay: 0.2s; }
 .stagger-3 { animation-delay: 0.3s; }
 .stagger-4 { animation-delay: 0.4s; }
+
+/* Enhanced animations for background elements */
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.1); }
+}
+
+@keyframes drift {
+  0%, 100% { transform: translateX(0px) translateY(0px); }
+  25% { transform: translateX(10px) translateY(-10px); }
+  50% { transform: translateX(-5px) translateY(-5px); }
+  75% { transform: translateX(-10px) translateY(10px); }
+}
+
+.rotate-slow {
+  animation: rotate 20s linear infinite;
+}
+
+.pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.drift {
+  animation: drift 8s ease-in-out infinite;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .glass-morphism {
+    background: rgba(42, 42, 46, 0.35);
+    backdrop-filter: blur(15px);
+  }
+  
+  .glass-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0, 212, 255, 0.1);
+  }
+  
+  .floating-animation {
+    animation-duration: 4s;
+  }
+  
+  .nav-blur {
+    backdrop-filter: blur(15px);
+    background: rgba(10, 10, 11, 0.9);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(190 100% 50%), hsl(190 100% 40%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Optimize animations for mobile */
+  .rotate-slow {
+    animation-duration: 30s;
+  }
+  
+  .pulse-glow {
+    animation-duration: 6s;
+  }
+  
+  .drift {
+    animation-duration: 12s;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+  
+  .glass-morphism {
+    padding: 1.5rem;
+    background: rgba(42, 42, 46, 0.4);
+  }
+  
+  .floating-animation {
+    animation-duration: 3s;
+  }
+  
+  /* Touch-friendly button sizing */
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .glass-hover:hover {
+    background: rgba(42, 42, 46, 0.25);
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .glass-hover:active {
+    background: rgba(42, 42, 46, 0.4);
+    transform: scale(0.98);
+  }
+}
