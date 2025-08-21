@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauri Khotele | Product Manager & Consultant</title>
+    <meta name="description" content="Product Manager and Consultant with expertise in product discovery, search optimization, and strategic product development. MBA from IIT Kharagpur.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'inter': ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    'charcoal': '#1F1F23',
+                    'deep-black': '#0A0A0B',
+                    'accent-cyan': '#00D4FF',
+                    'dark-gray': '#2A2A2E',
+                    'medium-gray': '#48484A',
+                    'off-white': '#F5F5F7',
+                    'muted-gray': '#8E8E93'
+                },
+                backgroundImage: {
+                    'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    'gradient-dark': 'linear-gradient(135deg, #0A0A0B 0%, #1F1F23 100%)',
+                }
+            }
+        }
+    };
+    </script>
+    <style>
+        .glass-morphism {
+            background: rgba(42, 42, 46, 0.25);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-hover:hover {
+            background: rgba(42, 42, 46, 0.4);
+            backdrop-filter: blur(25px);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0, 212, 255, 0.1);
+        }
+        .floating-animation {
+            animation: floating 6s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+        html { scroll-behavior: smooth; }
+        .text-gradient {
+            background: linear-gradient(135deg, #00D4FF, #0099CC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(10, 10, 11, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-gradient-dark font-inter text-off-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-blur border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold text-gradient">Gauri Khotele</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-accent-cyan transition-colors duration-300">Home</a>
+                    <a href="#projects" class="hover:text-accent-cyan transition-colors duration-300">Projects</a>
+                    <a href="#about" class="hover:text-accent-cyan transition-colors duration-300">About</a>
+                    <a href="#contact" class="hover:text-accent-cyan transition-colors duration-300">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <i class="fas fa-bars text-xl cursor-pointer hover:text-accent-cyan transition-colors"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0">
+            <div class="floating-animation absolute top-20 right-20 w-64 h-64 rounded-full bg-accent-cyan/5 blur-3xl"></div>
+            <div class="floating-animation absolute bottom-20 left-20 w-96 h-96 rounded-full bg-accent-cyan/3 blur-3xl" style="animation-delay: -3s;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center relative z-10">
+            <div class="fade-in-up">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    <span class="text-off-white">Hi, I'm</span>
+                    <span class="text-gradient block mt-2">Gauri Khotele</span>
+                </h1>
+            </div>
+            <div class="fade-in-up stagger-1">
+                <p class="text-xl md:text-2xl text-muted-gray mb-6 max-w-3xl mx-auto">
+                    Product Manager & Consultant specializing in product discovery, search optimization, and strategic product development
+                </p>
+            </div>
+            <div class="fade-in-up stagger-2">
+                <p class="text-lg text-muted-gray mb-12 max-w-2xl mx-auto">
+                    MBA from IIT Kharagpur • Driving ₹200 Crore+ platform growth • Expert in product discovery systems and user experience optimization
+                </p>
+            </div>
+            <div class="fade-in-up stagger-3 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="bg-accent-cyan hover:bg-accent-cyan/80 text-deep-black px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent-cyan/25">
+                    View My Work
+                </a>
+                <a href="#contact" class="glass-morphism glass-hover px-8 py-4 rounded-xl font-semibold text-center">
+                    Get In Touch
+                </a>
+            </div>
+            
+            <!-- Scroll indicator -->
+            <div class="fade-in-up stagger-4 absolute bottom-8 left-1/2 transform -translate-x-1/2">
+                <div class="animate-bounce">
+                    <i class="fas fa-chevron-down text-accent-cyan text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Featured Projects</h2>
+                <p class="text-xl text-muted-gray max-w-2xl mx-auto">
+                    Transforming product experiences through data-driven insights and strategic innovation
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @COMPONENT: ProjectCard [project data from resume] -->
+                <div class="glass-morphism glass-hover rounded-2xl p-8 relative group">
+                    <div class="absolute top-6 right-6">
+                        <i class="fas fa-search text-accent-cyan text-2xl opacity-60"></i>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-accent-cyan text-sm font-semibold tracking-wide uppercase">Product Discovery</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-4">Search & Recommendations Revamp</h3>
+                        <p class="text-muted-gray leading-relaxed">
+                            Led end-to-end revamp of product discovery systems for ₹200 Crore/month grocery platform. Enhanced relevance and reduced zero-result queries by 40% using semantic search with vector embeddings.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-accent-cyan/20 text-accent-cyan px-3 py-1 rounded-full text-sm">Elasticsearch</span>
+                        <span class="bg-accent-cyan/20 text-accent-cyan px-3 py-1 rounded-full text-sm">Vector Embeddings</span>
+                        <span class="bg-accent-cyan/20 text-accent-cyan px-3 py-1 rounded-full text-sm">A/B Testing</span>
+                    </div>
+                    <div class="text-accent-cyan font-semibold">
+                        <span class="group-hover:text-off-white transition-colors">Jumbotail Technologies →</span>
+                    </div>
+                </div>
+                <!-- @END_COMPONENT: ProjectCard -->
+
+                <!-- @COMPONENT: ProjectCard [Jio Platform experience] -->
+                <div class="glass-morphism glass-hover rounded-2xl p-8 relative group">
+                    <div class="absolute top-6 right-6">
+                        <i class="fas fa-cogs text-accent-cyan text-2xl opacity-60"></i>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-accent-cyan text-sm font-semibold tracking-wide uppercase">Service Validation</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-4">JioTranslate Launch</h3>
+                        <p class="text-muted-gray leading-relaxed">
+                            Contributed to successful product launch through defect resolution and competitive benchmarking. Reduced post-deployment changes by 32% through strategic requirements gathering.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-accent-cyan/20 text-accent-cyan px-3 py-1 rounded-full text-sm">Azure DevOps</span>
+                        <span class="bg-accent-cyan/20 text-accent-cyan px-3 py-1 rounded-full text-sm">QA Strategy</span>
+                        <span class="bg-accent-cyan/20 text-accent-cyan px-3 py-1 rounded-full text-sm">Product Testing</span>
+                    </div>
+                    <div class="text-accent-cyan font-semibold">
+                        <span class="group-hover:text-off-white transition-colors">Jio Platform Ltd →</span>
+                    </div>
+                </div>
+                <!-- @END_COMPONENT: ProjectCard -->
+
+                <!-- @COMPONENT: ProjectCard [Project Management] -->
+                <div class="glass-morphism glass-hover rounded-2xl p-8 relative group">
+                    <div class="absolute top-6 right-6">
+                        <i class="fas fa-project-diagram text-accent-cyan text-2xl opacity-60"></i>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-accent-cyan text-sm font-semibold tracking-wide uppercase">Project Management</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-4">Process Optimization</h3>
+                        <p class="text-muted-gray leading-relaxed">
+                            Analyzed process flows and identified bottlenecks to ensure timely project completion. Managed project timelines, scope adjustments, and stakeholder communication effectively.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-accent-cyan/20 text-accent-cyan px-3 py-1 rounded-full text-sm">Process Analysis</span>
+                        <span class="bg-accent-cyan/20 text-accent-cyan px-3 py-1 rounded-full text-sm">Risk Management</span>
+                        <span class="bg-accent-cyan/20 text-accent-cyan px-3 py-1 rounded-full text-sm">Stakeholder Mgmt</span>
+                    </div>
+                    <div class="text-accent-cyan font-semibold">
+                        <span class="group-hover:text-off-white transition-colors">Sunny InfraProjects →</span>
+                    </div>
+                </div>
+                <!-- @END_COMPONENT: ProjectCard -->
+
+                <!-- @COMPONENT: ProjectCard [Leadership Achievement] -->
+                <div class="glass-morphism glass-hover rounded-2xl p-8 relative group md:col-span-2 lg:col-span-3">
+                    <div class="grid md:grid-cols-3 gap-8 items-center">
+                        <div class="md:col-span-2">
+                            <div class="absolute top-6 right-6">
+                                <i class="fas fa-users text-accent-cyan text-2xl opacity-60"></i>
+                            </div>
+                            <div class="mb-6">
+                                <span class="text-accent-cyan text-sm font-semibold tracking-wide uppercase">Leadership & Strategy</span>
+                                <h3 class="text-3xl font-bold mt-2 mb-4">Multi-Faceted Leadership Experience</h3>
+                                <p class="text-muted-gray leading-relaxed text-lg">
+                                    Demonstrated exceptional leadership across diverse domains - from coordinating placements at IIT Kharagpur to establishing international partnerships through AIESEC, organizing large-scale events, and leading national-level sports teams to championship victories.
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="bg-accent-cyan/10 p-4 rounded-xl">
+                                    <h4 class="font-semibold text-accent-cyan mb-2">Placement Coordinator</h4>
+                                    <p class="text-sm text-muted-gray">VGSoM, IIT Kharagpur</p>
+                                </div>
+                                <div class="bg-accent-cyan/10 p-4 rounded-xl">
+                                    <h4 class="font-semibold text-accent-cyan mb-2">Team Leader</h4>
+                                    <p class="text-sm text-muted-gray">AIESEC Pune</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="text-center p-6 glass-morphism rounded-xl">
+                                <div class="text-3xl font-bold text-accent-cyan mb-2">30+</div>
+                                <div class="text-sm text-muted-gray">Students Guided</div>
+                            </div>
+                            <div class="text-center p-6 glass-morphism rounded-xl">
+                                <div class="text-3xl font-bold text-accent-cyan mb-2">5000+</div>
+                                <div class="text-sm text-muted-gray">Event Attendees</div>
+                            </div>
+                            <div class="text-center p-6 glass-morphism rounded-xl">
+                                <div class="text-3xl font-bold text-accent-cyan mb-2">Gold</div>
+                                <div class="text-sm text-muted-gray">National Medal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_COMPONENT: ProjectCard -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-gradient">About Me</h2>
+                    <p class="text-lg text-muted-gray leading-relaxed mb-8">
+                        I'm a passionate Product Manager and Consultant with a unique blend of technical expertise and business acumen. Currently pursuing my MBA from VGSoM, IIT Kharagpur, I bring hands-on experience in transforming product discovery systems and driving significant business growth.
+                    </p>
+                    <p class="text-lg text-muted-gray leading-relaxed mb-8">
+                        My journey spans from engineering to product management, with proven success in leading cross-functional teams, implementing data-driven solutions, and delivering measurable impact on multi-crore platforms. I thrive at the intersection of technology and user experience.
+                    </p>
+                    
+                    <!-- Skills/Expertise -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4 text-accent-cyan">Core Expertise</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-accent-cyan"></i>
+                                <span>Product Strategy</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-accent-cyan"></i>
+                                <span>Search Optimization</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-accent-cyan"></i>
+                                <span>Data Analytics</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-accent-cyan"></i>
+                                <span>A/B Testing</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-accent-cyan"></i>
+                                <span>Agile/Scrum</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-accent-cyan"></i>
+                                <span>Team Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Education -->
+                    <div class="glass-morphism rounded-2xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-accent-cyan flex items-center">
+                            <i class="fas fa-graduation-cap mr-3"></i>Education
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="border-l-2 border-accent-cyan/30 pl-4">
+                                <h4 class="font-semibold">Master of Business Administration</h4>
+                                <p class="text-accent-cyan text-sm">VGSoM, IIT Kharagpur</p>
+                                <p class="text-muted-gray text-sm">Jun 2024 - May 2026 | CGPA: 7.44/10</p>
+                            </div>
+                            <div class="border-l-2 border-accent-cyan/30 pl-4">
+                                <h4 class="font-semibold">B.E in Computer Engineering</h4>
+                                <p class="text-accent-cyan text-sm">Smt. Kashibai Navale College of Engineering</p>
+                                <p class="text-muted-gray text-sm">Jul 2019 - Jul 2023 | CGPA: 8.74/10</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="glass-morphism rounded-2xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-accent-cyan flex items-center">
+                            <i class="fas fa-certificate mr-3"></i>Certifications
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span>Certified Scrum Product Owner (CSPO)</span>
+                                <span class="text-accent-cyan text-sm">2025</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span>Agile Project Management</span>
+                                <span class="text-accent-cyan text-sm">2024</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span>Microsoft Power BI for Business Intelligence</span>
+                                <span class="text-accent-cyan text-sm">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="glass-morphism rounded-2xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-accent-cyan flex items-center">
+                            <i class="fas fa-language mr-3"></i>Languages
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span>English</span>
+                                <span class="text-accent-cyan text-sm">Professional Proficiency</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span>Hindi</span>
+                                <span class="text-accent-cyan text-sm">Native Proficiency</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Let's Connect</h2>
+                <p class="text-xl text-muted-gray max-w-2xl mx-auto">
+                    Ready to collaborate on your next product challenge? Let's discuss how we can drive growth together.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="glass-morphism rounded-2xl p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-accent-cyan">Get In Touch</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-accent-cyan/20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-envelope text-accent-cyan"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-muted-gray">Email</p>
+                                    <a href="mailto:gauri.khotele.iitkgp@gmail.com" class="text-off-white hover:text-accent-cyan transition-colors">
+                                        gauri.khotele.iitkgp@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-accent-cyan/20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-phone text-accent-cyan"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-muted-gray">Phone</p>
+                                    <a href="tel:+918600549099" class="text-off-white hover:text-accent-cyan transition-colors">
+                                        +91-8600549099
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-accent-cyan/20 rounded-xl flex items-center justify-center">
+                                    <i class="fab fa-linkedin text-accent-cyan"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-muted-gray">LinkedIn</p>
+                                    <a href="https://linkedin.com/in/gauri_khotele" class="text-off-white hover:text-accent-cyan transition-colors">
+                                        gauri_khotele
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-morphism rounded-2xl p-8">
+                        <h3 class="text-xl font-semibold mb-4 text-accent-cyan">Let's Collaborate</h3>
+                        <p class="text-muted-gray leading-relaxed">
+                            I'm always open to discussing product opportunities, consulting projects, or just having a chat about the latest in product management and technology. Feel free to reach out!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass-morphism rounded-2xl p-8">
+                    <form class="space-y-6" data-implementation="Should handle form validation and submission">
+                        <!-- @STATE: formData:object, errors:object, isSubmitting:boolean -->
+                        <div>
+                            <label class="block text-sm font-medium text-muted-gray mb-2">Name</label>
+                            <input 
+                                type="text" 
+                                data-bind="formData.name"
+                                class="w-full bg-dark-gray/50 border border-medium-gray/30 rounded-xl px-4 py-3 text-off-white placeholder-muted-gray focus:border-accent-cyan focus:ring-1 focus:ring-accent-cyan transition-colors"
+                                placeholder="Your Name"
+                                data-mock="true"
+                            />
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-muted-gray mb-2">Email</label>
+                            <input 
+                                type="email" 
+                                data-bind="formData.email"
+                                class="w-full bg-dark-gray/50 border border-medium-gray/30 rounded-xl px-4 py-3 text-off-white placeholder-muted-gray focus:border-accent-cyan focus:ring-1 focus:ring-accent-cyan transition-colors"
+                                placeholder="your.email@example.com"
+                                data-mock="true"
+                            />
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-muted-gray mb-2">Subject</label>
+                            <input 
+                                type="text" 
+                                data-bind="formData.subject"
+                                class="w-full bg-dark-gray/50 border border-medium-gray/30 rounded-xl px-4 py-3 text-off-white placeholder-muted-gray focus:border-accent-cyan focus:ring-1 focus:ring-accent-cyan transition-colors"
+                                placeholder="What would you like to discuss?"
+                                data-mock="true"
+                            />
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-muted-gray mb-2">Message</label>
+                            <textarea 
+                                rows="5" 
+                                data-bind="formData.message"
+                                class="w-full bg-dark-gray/50 border border-medium-gray/30 rounded-xl px-4 py-3 text-off-white placeholder-muted-gray focus:border-accent-cyan focus:ring-1 focus:ring-accent-cyan transition-colors resize-none"
+                                placeholder="Tell me about your project or what you'd like to collaborate on..."
+                                data-mock="true"
+                            ></textarea>
+                        </div>
+                        
+                        <button 
+                            type="submit"
+                            data-event="click:handleSubmit"
+                            class="w-full bg-accent-cyan hover:bg-accent-cyan/80 text-deep-black font-semibold py-4 px-6 rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent-cyan/25"
+                            data-implementation="Should validate form fields and submit via API"
+                        >
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-muted-gray mb-4 md:mb-0">
+                    © 2024 Gauri Khotele. All rights reserved.
+                </div>
+                <div class="flex space-x-6">
+                    <a href="mailto:gauri.khotele.iitkgp@gmail.com" class="text-muted-gray hover:text-accent-cyan transition-colors">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/gauri_khotele" class="text-muted-gray hover:text-accent-cyan transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="tel:+918600549099" class="text-muted-gray hover:text-accent-cyan transition-colors">
+                        <i class="fas fa-phone text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements that should animate
+        document.querySelectorAll('.glass-hover').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle (placeholder for actual implementation)
+        const mobileMenuBtn = document.querySelector('.fa-bars');
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', function() {
+                // TODO: Implement mobile menu toggle functionality
+                console.log('Mobile menu toggle clicked');
+            });
+        }
+
+        // Form submission handler (placeholder)
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // TODO: Implement form validation and submission
+                console.log('Form submitted - implement validation and API call');
+            });
+        }
+
+        // Navbar background on scroll
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('nav');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 50) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>
