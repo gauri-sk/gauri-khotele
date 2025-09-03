@@ -6,7 +6,7 @@ export default function ProjectsSection() {
   const projects = [
     {
       icon: <Search />,
-      category: "Product Discovery",
+      category: "Product Management",
       title: "Search & Recommendations Revamp",
       description: "Led end-to-end revamp of product discovery systems for ₹200 Crore/month grocery platform. Enhanced relevance and reduced zero-result queries by 40% using semantic search with vector embeddings.",
       technologies: ["Elasticsearch", "Vector Embeddings", "A/B Testing"],
