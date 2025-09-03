@@ -31,7 +31,7 @@ export default function ProjectsSection() {
   ];
 
   const leadershipProject = {
-    icon: <Users />,
+    // icon: <Users />,
     category: "Leadership & Strategy",
     title: "Multi-Faceted Leadership Experience",
     description: "Demonstrated exceptional leadership across diverse domains - from coordinating placements at IIT Kharagpur to establishing international partnerships through AIESEC, organizing large-scale events, and leading national-level sports teams to championship victories.",
